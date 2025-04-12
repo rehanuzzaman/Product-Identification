@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethical Consumer Check | Bangladesh</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Ethical Consumer Check</h1>
+            <p class="subtitle">Check product connections before you buy</p>
+        </header>
+        
+        <div class="search-container">
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Search for brands or products...">
+                <button id="searchBtn"><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+        
+        <div id="resultContainer" class="result-container hidden">
+            <div id="resultContent" class="result-content">
+                <!-- Results will appear here -->
+            </div>
+        </div>
+        
+        <div class="info-section">
+            <h2>About This Tool</h2>
+            <p>This database helps Bangladeshi consumers identify products connected to Israel. Our data is regularly updated from reliable sources.</p>
+            <div class="stats">
+                <div class="stat-item">
+                    <span class="stat-number" id="totalProducts">500+</span>
+                    <span class="stat-label">Products</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" id="connectedProducts">220</span>
+                    <span class="stat-label">Connected</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" id="safeProducts">280+</span>
+                    <span class="stat-label">Safe</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
