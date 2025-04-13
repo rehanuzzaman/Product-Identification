@@ -6,45 +6,68 @@
     <title>Ethical Consumer Check | Bangladesh</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>Ethical Consumer Check</h1>
-            <p class="subtitle">Check product connections before you buy</p>
+            <div class="logo">
+                <i class="fas fa-hand-holding-heart"></i>
+                <h1>Ethical Consumer Check</h1>
+            </div>
+            <p class="subtitle">Make informed choices with every purchase</p>
         </header>
         
-        <div class="search-container">
-            <div class="search-box">
-                <input type="text" id="searchInput" placeholder="Search for brands or products...">
-                <button id="searchBtn"><i class="fas fa-search"></i></button>
+        <main>
+            <div class="search-container">
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Search brands or products...">
+                    <button id="searchBtn">
+                        <i class="fas fa-search"></i>
+                        <span>Search</span>
+                    </button>
+                </div>
+                <p class="search-hint">Try "Nestle", "Pran", or "Coca-Cola"</p>
             </div>
-        </div>
+            
+            <div id="resultContainer" class="result-container hidden">
+                <div id="resultContent" class="result-content">
+                    <!-- Results will appear here -->
+                </div>
+            </div>
+            
+            <div class="info-section">
+                <h2><i class="fas fa-info-circle"></i> About This Tool</h2>
+                <p>This database helps Bangladeshi consumers identify brands connected to Israel through investments, operations, or partnerships. Our data is regularly verified from reliable sources.</p>
+                
+                <div class="stats">
+                    <div class="stat-item">
+                        <span class="stat-number" id="totalProducts">500+</span>
+                        <span class="stat-label">Brands Tracked</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" id="connectedProducts">220</span>
+                        <span class="stat-label">Connected</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" id="safeProducts">280+</span>
+                        <span class="stat-label">Ethical Choices</span>
+                    </div>
+                </div>
+            </div>
+        </main>
         
-        <div id="resultContainer" class="result-container hidden">
-            <div id="resultContent" class="result-content">
-                <!-- Results will appear here -->
-            </div>
-        </div>
-        
-        <div class="info-section">
-            <h2>About This Tool</h2>
-            <p>This database helps Bangladeshi consumers identify products connected to Israel. Our data is regularly updated from reliable sources.</p>
-            <div class="stats">
-                <div class="stat-item">
-                    <span class="stat-number" id="totalProducts">500+</span>
-                    <span class="stat-label">Products</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number" id="connectedProducts">220</span>
-                    <span class="stat-label">Connected</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number" id="safeProducts">280+</span>
-                    <span class="stat-label">Safe</span>
+        <footer>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <p class="version">Version 1.2.0</p>
+                    <p class="credits">Last Updated: April 13, 2025</p>
                 </div>
             </div>
-        </div>
+            <div class="copyright">
+                <p>copyright 2025 &copy; Rehanuz Zaman - All rights reserved.</p>
+            </div>
+        </footer>
     </div>
 
     <script src="scripts.js"></script>
